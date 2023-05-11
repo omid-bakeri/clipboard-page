@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../image/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url("../image/bg-header-mobile.png");
+  }
+}
+.ficon:hover {
+  filter: brightness(10%) sepia(68%) hue-rotate(121deg) contrast(94%)
+    saturate(434%) invert(53%);
+  transform: translateY(-20%);
+}
+.hov:hover {
+  color: cadetblue;
+  transition: 0.5s ease;
+  transform: translateY(5%);
+  text-decoration: solid;
+  font-size: 1rem;
+}
