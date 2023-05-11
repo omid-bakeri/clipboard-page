@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Inter:wght@400;500;600;700;800&family=Rubik:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>clipboars page</title>
   </head>
-  <body>
+  <body class="relative">
     <section id="hero" class="p-1">
       <div class="max-w-6xl p-1 text-center mb-16 px-10 mx-auto pt-16">
         <img
@@ -39,12 +40,12 @@
         </p>
         <div class="md:max-w-3xl p-6 mx-auto md:flex md:justify-center">
           <p
-            class="text-white text-[1.3rem] mb-7 font-small bg-[#26bba4] rounded-r-full rounded-l-full md:w-56 mx-auto w-86 py-4"
+            class="buttons text-white text-[1.3rem] mb-7 font-small bg-[#26bba4] rounded-r-full rounded-l-full md:w-56 mx-auto w-86 py-4"
           >
             Download for iOS
           </p>
           <p
-            class="text-white text-[1.3rem] mb-7 font-small bg-lightBlue rounded-r-full rounded-l-full md:w-56 mx-auto w-86 py-4"
+            class="buttons text-white text-[1.3rem] mb-7 font-small bg-lightBlue rounded-r-full rounded-l-full md:w-56 mx-auto w-86 py-4"
           >
             Download for Mac
           </p>
@@ -212,24 +213,26 @@
         </p>
         <div class="md:max-w-3xl p-6 mx-auto md:flex md:justify-center">
           <p
-            class="text-white text-[1.3rem] mb-7 font-small bg-[#26bba4] rounded-r-full rounded-l-full md:w-56 mx-auto w-86 py-4"
+            class="buttons text-white text-[1.3rem] mb-7 font-small bg-[#26bba4] rounded-r-full rounded-l-full md:w-56 mx-auto w-86 py-4"
           >
             Download for iOS
           </p>
           <p
-            class="text-white text-[1.3rem] mb-7 font-small bg-lightBlue rounded-r-full rounded-l-full md:w-56 mx-auto w-86 py-4"
+            class="buttons text-white text-[1.3rem] mb-7 font-small bg-lightBlue rounded-r-full rounded-l-full md:w-56 mx-auto w-86 py-4"
           >
             Download for Mac
           </p>
         </div>
       </div>
     </section>
-    <section id="footer" class="bg-gray-100 p-6">
+    <section id="footer" class="bg-gray-100 p-10">
       <div
-        class="flex flex-col justify-center items-center space-y-10 space-x-0"
+        class="flex flex-col md:flex-row md:space-x-16 md:justify-between md:max-w-6xl md:mx-auto items-center justify-center items-center space-y-10 space-x-0"
       >
         <img class="w-20" src="image/logo.svg" alt="" />
-        <div class="flex flex-col mx-auto justify-center space-y-2">
+        <div
+          class="flex flex-col md:items-center md:max-w-3xl md:flex-row md:space-x-8 mx-auto justify-center space-y-2"
+        >
           <a href="#" class="text-center text-grayishBlue hov">FAQs</a>
           <a href="#" class="text-center text-grayishBlue hov">Contact Us</a>
           <a href="#" class="text-center text-grayishBlue hov"
@@ -257,5 +260,13 @@
         </div>
       </div>
     </section>
+    <div
+      class="change-state rounded-full px-7 py-2 bg-gray-200 absolute top-3 left-3 hover:cursor-pointer"
+    >
+      <i
+        class="ph-bold icons-change-state ph-moon text-gray-500 text-[20px] text-center hover:shadow-xl hover:cursor-pointer"
+      ></i>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
